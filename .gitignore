@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Project data and generated artifacts
+data/
+artifacts/
+outputs/
+runs/
+*.pt
+*.pth
+*.joblib
+*.npy
+*.npz
+*.csv
+
+# Keep placeholder files if they are added later
+!data/**/.gitkeep
+!artifacts/**/.gitkeep
+
