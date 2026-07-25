@@ -1,4 +1,7 @@
-"""InvDetect: anomaly detection in the DDIM noise latent space."""
+"""InvDetect: a simple patch-based anomaly detection pipeline."""
 
-__version__ = "0.1.0"
+from invdetect.data import BraTS2021PatchDataset
+from invdetect.diffusion import DiffusionDenoiser
 
+__all__ = ["BraTS2021PatchDataset", "DiffusionDenoiser"]
+__version__ = "0.2.0"

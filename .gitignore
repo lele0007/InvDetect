@@ -15,7 +15,9 @@ venv/
 Thumbs.db
 
 # Project data and generated artifacts
-data/
+data/**
+!data/**/
+!data/**/.gitkeep
 artifacts/
 outputs/
 runs/
@@ -27,6 +29,4 @@ runs/
 *.csv
 
 # Keep placeholder files if they are added later
-!data/**/.gitkeep
 !artifacts/**/.gitkeep
-
