@@ -7,7 +7,6 @@ from invdetect.diffusion import ddim_invert
 
 @torch.inference_mode()
 def extract_latent_features(model, schedule, loader, device):
-    """Invert all patches and return features, filenames, and labels."""
     feature_batches = []
     filenames = []
     labels = []

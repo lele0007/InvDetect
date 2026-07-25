@@ -14,7 +14,7 @@ from invdetect.diffusion import (
 from invdetect.reconstruction import reconstruct_images
 
 
-def test_small_diffusion_forward_and_inversion():
+def test_and_inversion():
     model = DiffusionDenoiser(channels=1, base_channels=8, timesteps=4)
     schedule = DiffusionSchedule(timesteps=4)
     images = torch.randn(2, 1, 8, 8)

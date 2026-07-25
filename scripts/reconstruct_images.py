@@ -5,7 +5,7 @@ from invdetect.reconstruction import reconstruct_images
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Reconstruct images and anomaly masks.")
+    parser = argparse.ArgumentParser(description="Reconstruct images.")
     parser.add_argument("--config", default="configs/default.yaml")
     args = parser.parse_args()
     config = load_config(args.config)

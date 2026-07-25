@@ -4,8 +4,8 @@ paths:
   train_dir: data/train/normal
   test_dir: data/test
   masks_dir: data/masks
-  diffusion_checkpoint: artifacts/diffusion.pt
-  classifier_checkpoint: artifacts/classifier.joblib
+  diffusion_checkpoint: /diffusion.pt
+  classifier_checkpoint: /classifier.joblib
   predictions_csv: outputs/patch_predictions.csv
   reconstruction_dir: outputs/reconstructed
 

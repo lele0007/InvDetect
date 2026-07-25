@@ -5,7 +5,7 @@ from invdetect.dice import evaluate_dice
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Calculate Dice only.")
+    parser = argparse.ArgumentParser(description="Calculate Dice.")
     parser.add_argument("--config", default="configs/default.yaml")
     args = parser.parse_args()
     config = load_config(args.config)

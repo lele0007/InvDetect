@@ -15,7 +15,7 @@ from invdetect.diffusion import (
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Train diffusion on normal BraTS patches.")
+    parser = argparse.ArgumentParser(description="Train.")
     parser.add_argument("--config", default="configs/default.yaml")
     args = parser.parse_args()
     config = load_config(args.config)

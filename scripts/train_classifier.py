@@ -11,7 +11,7 @@ from invdetect.diffusion import choose_device, load_diffusion
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Train One-Class SVM on normal latents.")
+    parser = argparse.ArgumentParser(description="SVM.")
     parser.add_argument("--config", default="configs/default.yaml")
     args = parser.parse_args()
     config = load_config(args.config)

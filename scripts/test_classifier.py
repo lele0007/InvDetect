@@ -1,10 +1,8 @@
 import argparse
 import csv
 from pathlib import Path
-
 import joblib
 from torch.utils.data import DataLoader
-
 from invdetect.classifier import extract_latent_features, predict_patches
 from invdetect.config import load_config
 from invdetect.data import BraTS2021PatchDataset
@@ -12,7 +10,7 @@ from invdetect.diffusion import choose_device, load_diffusion
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Classify labeled BraTS test patches.")
+    parser = argparse.ArgumentParser(description="Classify.")
     parser.add_argument("--config", default="configs/default.yaml")
     args = parser.parse_args()
     config = load_config(args.config)
